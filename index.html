@@ -28,7 +28,7 @@
             <label for="fullname">
                 <p>Full Name</p>
                 <input type="text" name="fullname" placeholder="Required: Enter Your Name" id="fullname"
-                    required="required">
+                    required="required" autofocus="autofocus">
             </label>
             <br>
             <!-- email -->
@@ -61,7 +61,7 @@
             <label for="states">
                 <p>States</p>
             </label>
-            <input list="states">
+            <input list="states" placeholder="Drop-down list">
             <datalist id="states">
                 <option value="AL">Alabama</option>
                 <option value="AK">Alaska</option>
@@ -157,16 +157,11 @@
             <br>
             <label for="other">
                 <p>Other topics you'd like to hear about</p>
-                <textarea name="other" id="other" cols="30" rows="10"></textarea>
+                <textarea name="other" id="other" cols="50" rows="10"></textarea>
             </label>
-
-
-
-
-
-
-
         </fieldset>
+
+        <input type="submit" value="">
 
 
 
