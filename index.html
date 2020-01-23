@@ -17,8 +17,9 @@
         <h2>SignUp for Our Newsletter</h2>
         <p>Get the latest News on how your code is doing right in your inbox.</p>
     </section>
+    <hr>
 
-    <!-- contact form begin -->
+    <!-- contact section begin -->
     <form action="" method="POST">
         <fieldset>
 
@@ -26,29 +27,36 @@
             <!-- name -->
             <label for="fullname">
                 <p>Full Name</p>
+                <input type="text" name="fullname" placeholder="Required: Enter Your Name" id="fullname"
+                    required="required">
             </label>
-            <input type="text" name="fullname" placeholder="Required: Enter Your Name" id="fullname"
-                required="required">
+            <br>
             <!-- email -->
             <label for="email">
                 <p>Email Address</p>
+                <input type="email" name="email" placeholder="Required: Enter Your Email" id="email"
+                    required="required">
             </label>
-            <input type="email" name="email" placeholder="Required: Enter Your Email" id="email" required="required">
+            <br>
             <!-- phone -->
             <label for="phone">
                 <p>Phone Number</p>
+                <input type="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="888-888-8888"
+                    id="phone">
             </label>
-            <input type="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="888-888-8888" id="phone">
+            <br>
             <!-- address -->
             <label for="address">
                 <p>Street Address</p>
+                <input type="text" name="address" placeholder="Enter Street Address" id="address">
             </label>
-            <input type="text" name="address" placeholder="Enter Street Address" id="address">
+            <br>
             <!-- city -->
             <label for="city">
                 <p>City</p>
+                <input type="text" name="city" placeholder="City" id="city">
             </label>
-            <input type="text" name="city" placeholder="City" id="city">
+            <br>
             <!-- states -->
             <label for="states">
                 <p>States</p>
@@ -107,13 +115,66 @@
                 <option value="WI">Wisconsin</option>
                 <option value="WY">Wyoming</option>
             </datalist>
+            <br>
             <!-- zipcode -->
-            <legend for="zipcode">
+            <legend for="zip">
                 <p>ZipCode</p>
+                <input type="text" name="zipcode" placeholder="ZipCode" id="zip">
             </legend>
-            <input type="text" name="zipcode" placeholder="ZipCode" id="zipcode">
+
         </fieldset>
+        <!-- contact section end -->
+        <hr>
+        <!-- newsletter section begin -->
+        <fieldset>
+            <legend>Newsletter</legend>
+            <!-- checklist -->
+            <p>Select the Newsletter you would like to recieve</p>
+
+            <label for="html">
+                <input type="checkbox" name="html" value="html" id="html"> <span>HTML</span>
+            </label>
+            <br>
+            <label for="css">
+                <input type="checkbox" name="css" value="css" id="css"> <span>CSS</span>
+            </label>
+            <br>
+            <label for="js">
+                <input type="checkbox" name="javascript" value="javascript" checked="checked" id="js">
+                <span>JavaScript</span>
+            </label>
+
+
+            <p>Newsletter format</p>
+
+            <label for="format-html">
+                <input type="radio" name="format" value="html" id="format-html"> <span>HTML</span>
+            </label>
+            <br>
+            <label for="format-plaintxt">
+                <input type="radio" name="format" value="plaintext" id="format-plaintxt"> <span>Plaintext</span>
+            </label>
+            <br>
+            <label for="other">
+                <p>Other topics you'd like to hear about</p>
+                <textarea name="other" id="other" cols="30" rows="10"></textarea>
+            </label>
+
+
+
+
+
+
+
+        </fieldset>
+
+
+
     </form>
+
+
+
+
 
 </body>
 
