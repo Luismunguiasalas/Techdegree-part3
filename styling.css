@@ -11,15 +11,19 @@ section {
     text-align: center;
 }
 
+p {
+    font-size: 1.1rem;
+}
+
 header {
-    background: #1f4037;
+    background: #39b896;
     /* fallback for old browsers */
-    background: -webkit-linear-gradient(to top, #99f2c8, #1f4037);
+    background: -webkit-linear-gradient(to top, #99f2c8, #39b896);
     /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to top, #99f2c8, #1f4037);
+    background: linear-gradient(to top, #99f2c8, #39b896);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    padding: 5vh;
-    color: white;
+    padding: 2rem;
+    color: black;
 }
 
 section {
@@ -38,10 +42,19 @@ section p {
 
 }
 
+/* div container */
+div {
+    margin: auto;
+    width: 90%;
+    /* border: 2px solid black; */
+}
+
+
 /* form styling */
 
 form {
-    padding: 0 1.1rem;
+    /* padding: 0 1.1rem; */
+    /* width: 100%; */
 }
 
 form fieldset {
@@ -56,23 +69,45 @@ form legend {
     width: 100%;
     text-align: center;
     border-radius: .2rem;
-    background: #1f4037;
+    background: #73eccc88;
     /* fallback for old browsers */
-    background: -webkit-linear-gradient(to top, #99f2c8, #529e8a);
+    background: -webkit-linear-gradient(to top, #99f2c8, #7dffdc62);
     /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to top, #99f2c8, #529e8a);
+    background: linear-gradient(to top, #99f2c8, #7dffdc62);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 form p {
     padding: .8rem 0;
+    font-weight: bold;
 }
 
 form input {
     width: 100%;
     height: 2.5rem;
-    border: 3px solid #1f4037;
+    border-style: none;
+    border-bottom: 1px solid #1f4037;
+    transition: ease-in-out .18s;
+    font-size: 1rem;
+    background-color: rgba(211, 211, 211, 0.457);
 }
+
+/* input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="phone"]:focus {
+    outline: none;
+    border-style: none;
+    border-bottom: 2px solid #99f2c8;
+} */
+
+input:focus {
+    background-color: white;
+    outline: none;
+    border-style: none;
+    border-bottom: 5px solid #99f2c8;
+    /* border-bottom: 5px solid #99f2c8; */
+}
+
 
 #zip {
     margin-bottom: 1.5rem;
@@ -81,13 +116,78 @@ form input {
 
 input[type="radio"],
 input[type="checkbox"] {
+    /* width: 100%; */
     margin-bottom: 1rem;
     width: 7%;
     height: auto;
     height: 1rem;
 }
 
+label[for="other"] p {
+    width: 100%;
+}
+
 textarea {
+    width: 100%;
     resize: vertical;
     border: 2px solid #1f4037;
+}
+
+
+
+@media screen and (min-width: 650px) {
+    body {
+        margin: auto;
+        width: 90%;
+    }
+
+    label p {
+        display: inline-block;
+        width: 25%;
+    }
+
+    label input {
+        display: inline-block;
+        width: 74%;
+        margin-left: auto;
+    }
+
+    input[list="states"] {
+        display: inline-block;
+        width: 74%;
+        margin-left: auto;
+    }
+
+    /* p {
+        display: inline-block;
+        width: 50%;
+    }
+
+    input {
+        width: 40%;
+        display: inline-block;
+    } */
+
+
+
+
+
+}
+
+@media screen and (min-width: 768px) {
+
+    header {
+        padding: 2.3rem;
+    }
+
+
+    div {
+        /* margin: auto; */
+        max-width: 700px;
+    }
+
+
+
+
+
 }
